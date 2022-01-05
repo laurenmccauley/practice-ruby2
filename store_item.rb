@@ -6,6 +6,10 @@
 
 
 class StoreItem
+
+  attr_reader :item, :color, :size, :price
+  attr_writer :size, :price
+
   def initialize(item, color, size, price)
     @item = item
     @color = color
@@ -13,29 +17,29 @@ class StoreItem
     @price = price
   end
 
-  def item
-    @item    
-  end
+  # def item
+  #   @item    
+  # end
 
-  def color
-    @color    
-  end
+  # def color
+  #   @color    
+  # end
 
-  def size(number)
-    size = number
-  end
+  # def size(number)
+  #   size = number
+  # end
 
-  def size
-    @size
-  end
+  # def size
+  #   @size
+  # end
 
-  def price=(price)
-    @price = price
-  end
+  # def price=(price)
+  #   @price = price
+  # end
 
-  def price
-    @price
-  end
+  # def price
+  #   @price
+  # end
 
 
 end
